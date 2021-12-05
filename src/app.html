@@ -1,16 +1,4 @@
 <template>
-	<!-- link tag not allowed?
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<a href="#" class="fa fa-facebook"></a>
-		<a href="#" class="fa fa-twitter"></a>
-	
-	<div class="topnav">
-		<img src="https://t4.ftcdn.net/jpg/03/10/99/43/360_F_310994319_2UDbmr1UT6oncu4Mid7Ezmp5Mz1qvEso.jpg"
-		width="55" height="55" class='logo'/>
-		<a href="#home">Home</a>
-		<a href="#menu">Menu</a>
-		<a href="#locations">Locations</a>
-	</div> -->
 
 	<div>
 		<c-nav nav={nav}></c-nav>
@@ -32,9 +20,59 @@
 		</div>
 	</div>
 
+	<br>
+
 	<div id='locations'>
-		<p>Leave us a review!</p>
-		<input type='text' id='review' size="50">
+		<ol>
+			<b>Locations</b>
+		</ol>
+		<li> Atlanta Location:
+			<br> Lorem ipsum dolor sit amet, consectetur
+			<br> Vestibulum efficitur elit nulla
+		</li>
+		<li> New York Location:
+			<br> Lorem ipsum dolor sit amet, consectetur
+			<br> Vestibulum efficitur elit nulla
+		</li>
+		<li> Houston Location:
+			<br> Lorem ipsum dolor sit amet, consectetur
+			<br> Vestibulum efficitur elit nulla
+		</li>
+	</div>
+
+	<br>
+
+	<div class='Contact-us'>
+		<h1> Contact Us </h1>
+
+		<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+			<input type=hidden name="orgid" value="00D5f000006P60n">
+			<input type=hidden name="retURL" value="http://thank_you">
+
+			<label for="name">Name</label><br><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+			<label for="email">Email</label><br><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+			<label for="phone">Phone</label><br><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+			<label for="type">Type</label><br><select  id="type" name="type"><option value="">--None--</option><option value="Complaints">Complaints</option>
+<option value="Feedbacks">Feedbacks</option>
+<option value="Electronic">Electronic</option>
+<option value="Structural">Structural</option>
+<option value="Other">Other</option>
+<option value="Product Specifications">Product Specifications</option>
+<option value="Shipping">Shipping</option>
+<option value="Warranty">Warranty</option>
+</select><br>
+
+			<label for="subject">Subject</label><br><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+			<label for="description">Description</label><br><textarea name="description"></textarea><br>
+
+			<input type="submit" name="submit">
+
+		</form>
 	</div>
 
 </template>

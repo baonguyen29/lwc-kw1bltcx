@@ -54,5 +54,19 @@ h1{
     width: 80%;
 }
 
+ol, li {
+text-align: center;
+}
+
+ol {
+  font-size: 1.5em;
+  font-family: 'Franklin Gothic Medium';
+  color: rgb(73, 70, 70);
+}
+
+.Contact-us {
+  text-align: center;
+}
+
 
 
